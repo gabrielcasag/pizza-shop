@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom'
 
 import { Separator } from '@/components/ui/separator'
 
+import AccountMenu from './account-menu'
+import NavLink from './nav-link'
 import { PizzaLogo } from './pizza-logo'
+import { ThemeToggle } from './theme/theme-toggle'
 
 export function Header() {
   return (
@@ -16,16 +19,21 @@ export function Header() {
         <Separator orientation="vertical" />
 
         <nav className="flex items-center space-x-4 lg:space-x-6">
-          <Link to="/">
+          <NavLink to="/">
             <Home />
             Inicio
-          </Link>
+          </NavLink>
 
-          <Link to="/">
+          <NavLink to="/orders">
             <UtensilsCrossed />
             Pedidos
-          </Link>
+          </NavLink>
         </nav>
+
+        <div className="ml-auto flex items-center space-x-4">
+          <ThemeToggle />
+          <AccountMenu />
+        </div>
       </div>
     </div>
   )

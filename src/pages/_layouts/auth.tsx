@@ -4,7 +4,7 @@ import { PizzaLogo } from '@/components/pizza-logo'
 
 export function AuthLayout() {
   return (
-    <div className="grid min-h-screen md:grid-cols-2">
+    <div className="grid min-h-screen antialiased md:grid-cols-2">
       <div className="hidden h-full flex-col justify-between border-r border-foreground/5 bg-muted p-10 text-muted-foreground md:flex">
         <PizzaLogo />
         <p className="text-sm">
