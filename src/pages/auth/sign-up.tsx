@@ -24,7 +24,7 @@ export function SignUp() {
     register,
     handleSubmit,
     formState: { isSubmitting },
-  } = useForm()
+  } = useForm<SignUpForm>()
 
   async function handleSignUp(data: SignUpForm) {
     try {

@@ -19,7 +19,7 @@ export function SignIn() {
     register,
     handleSubmit,
     formState: { isSubmitting },
-  } = useForm()
+  } = useForm<SignInForm>()
 
   async function handleSignIn(data: SignInForm) {
     try {
